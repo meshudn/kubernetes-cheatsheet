@@ -180,6 +180,8 @@ This is Kubernetes Cheatsheet based on Kubernetes API 1.19 version.
 | Undo deployment with specified revision  | kubectl rollout undo deployment `<deployment_name>` --to-revision `<revision_number>` |
 | Get all revisions of deployment          | kubectl rollout history deployment `<deployment_name>`                                |
 | Get specified revision of deployment     | kubectl rollout history deployment `<deployment_name>` --revision=`<revision_number>` |
+example:
+- kubectl -n kube-system rollout restart deployment coredns
 
 ## Job Commands
 
